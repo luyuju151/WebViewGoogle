@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">WebViewGoogle</string>
-    <string name="app_desc">Enables Google\'s independently updated WebView in AOSP-based >= 5.0 ROMs (any third-party ROM and non-Google factory ROMs)</string>
+    <string name="app_name">WebViewAndroid</string>
+    <string name="app_desc">Disable Google\'s independently updated WebView in AOSP-based >= 5.0 ROMs (any third-party ROM and non-Google factory ROMs)</string>
 
 </resources>
