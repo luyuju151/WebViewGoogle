@@ -12,13 +12,13 @@ public class ModWebView implements IXposedHookZygoteInit
 
 	@Override
 	public void initZygote(IXposedHookZygoteInit.StartupParam startupParam) throws Throwable {
-		XResources.setSystemWideReplacement("android", "string", "config_webViewPackageName", "com.google.android.webview");
+		XResources.setSystemWideReplacement("android", "string", "config_webViewPackageName", "com.android.webview");
 		
 		findAndHookMethod("android.webkit.WebViewFactory", null, "getWebViewPackageName", new XC_MethodHook() {
 			@Override
 			protected void beforeHookedMethod(XC_MethodHook.MethodHookParam param) throws Throwable {
 				XposedBridge.log("getWebViewPackageName");
-				param.setResult("com.google.android.webview");
+				param.setResult("com.android.webview");
 			}
 		});
 	}
